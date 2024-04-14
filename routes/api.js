@@ -116,7 +116,7 @@ var apikey = req.query.apikey
 if (!username) return res.json(loghandler.notusername)
 if (!apikey) return res.json(loghandler.notapikey)
 if(listkey.includes(apikey)){
-let anu = await fetchJson(`https://saipulanuar.ga/api/stalk/ig?username=${username}`)
+let anu = await fetchJson(`https://toxicdevilapi.vercel.app/stalk/instagram?username=${username}`)
 res.json({
 status: true,
 creator: `${creator}`,
@@ -132,7 +132,7 @@ var apikey = req.query.apikey
 if (!username) return res.json(loghandler.notusername)
 if (!apikey) return res.json(loghandler.notapikey)
 if(listkey.includes(apikey)){
-let anu = await fetchJson(`https://saipulanuar.ga/api/download/tiktokstalk?username=${username}`)
+let anu = await fetchJson(`https://toxicdevilapi.vercel.app/stalk/tiktok?username=${username}`)
 res.json({
 status: true,
 creator: `${creator}`,
@@ -164,7 +164,7 @@ var apikey = req.query.apikey
 if (!id) return res.json(loghandler.notid)
 if (!apikey) return res.json(loghandler.notapikey)
 if(listkey.includes(apikey)){
-let anu = await fetchJson(`https://saipulanuar.ga/api/stalk/epep?id=${id}`)
+let anu = await fetchJson(`https://apiaku.vercel.app/ffstalk?userid==${id}`)
 res.json({
 status: true,
 creator: `${creator}`,
@@ -1310,7 +1310,7 @@ var apikey = req.query.apikey
 if (!url) return res.json(loghandler.noturl)
 if (!apikey) return res.json(loghandler.notapikey)
 if(listkey.includes(apikey)){
-let result = await getBuffer(`https://saipulanuar.ga/api/download/ssweb?url=${url}`)
+let result = await getBuffer(`https://api.lolhuman.xyz/api/ssweb?apikey=gatadios&url=${url}`)
 res.set({'Content-Type': 'image/jpg'})
 res.send(result)
 } else {
